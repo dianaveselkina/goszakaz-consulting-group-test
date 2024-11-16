@@ -75,3 +75,36 @@ body {
 .row2 {
   grid-row: 2 / 3;
 }
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.link__text {
+  color: #5d71dd;
+}
+.pagination a.active {
+  color: #5d71dd;
+}
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+.news {
+  margin: 96px 42px 20px 42px;
+}
+.news__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.news-block__first,
+.news-block__second,
+.news-block__third {
+  max-width: 300px;
+}
