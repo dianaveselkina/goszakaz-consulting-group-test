@@ -85,6 +85,9 @@ h1 {
   display: flex;
   justify-content: center;
 }
+.pagination__btn {
+  display: none;
+}
 .pagination a {
   color: black;
   float: left;
@@ -204,5 +207,53 @@ footer {
     height: 350px;
     background-color: #5d71dd;
     border-radius: 20px;
+  }
+  .third-block {
+    margin: 40px 20px 20px 20px;
+    max-width: 290px;
+    height: 1130px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  .third-block__image {
+    min-width: 280px;
+    height: 350px;
+    background-color: #5d71dd;
+    border-radius: 20px;
+  }
+  .third-block__description {
+    min-width: 280px;
+    height: 350px;
+    background-color: #ffffff;
+    border-radius: 20px;
+  }
+  .pagination__block {
+    display: none;
+  }
+  .pagination__btn {
+    margin: 40px 20px 20px 20px;
+    display: block;
+  }
+  .news-block {
+    display: flex;
+    flex-direction: column;
+  }
+  .newsletter {
+    padding: 0;
+    margin: 40px 20px 20px 20px;
+  }
+  .newsletter-block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .newsletter-block__email,
+  .newsletter-block__execute {
+    width: 280px;
+  }
+  footer {
+    width: 320px;
+    height: 295px;
   }
 }
