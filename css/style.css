@@ -6,6 +6,12 @@ body {
   height: 2525px;
   background-color: #e5e5e5;
 }
+.banner__image320 {
+  display: none;
+}
+h1 {
+  font-size: 24px;
+}
 .header {
   max-width: 1024px;
   height: 70px;
@@ -149,11 +155,54 @@ body {
   left: 0;
   width: 20px;
   height: 20px;
-  background: url('img/right-arrow1.png') center no-repeat;
+  background: url('img/right-arrow.png') center no-repeat;
 }
 footer {
   width: 1024px;
   height: 295px;
   background-color: #5d71dd;
   opacity: 10%;
+}
+@media (width<=320px) {
+  .container {
+    max-width: 320px;
+  }
+  .banner__image1024 {
+    display: none;
+  }
+  .banner__image320 {
+    display: block;
+  }
+  .first__container {
+    max-width: 1024px;
+    height: 340px;
+    background-color: #e5e5e5;
+  }
+  .first__block {
+    max-width: 280px;
+    height: 350px;
+    margin: 40px 20px 20px 20px;
+    border-radius: 20px;
+    background-color: #ffffff;
+  }
+  .second-block {
+    margin: 40px 20px 20px 20px;
+    max-width: 290px;
+    height: 740px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  .second-block__description {
+    min-width: 280px;
+    height: 350px;
+    background-color: #ffffff;
+    border-radius: 20px;
+  }
+  .second-block__image {
+    min-width: 280px;
+    height: 350px;
+    background-color: #5d71dd;
+    border-radius: 20px;
+  }
 }
